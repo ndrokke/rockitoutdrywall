@@ -1,0 +1,142 @@
+/*=====================
+COLORS
+===================== */ 
+
+:root {
+    --blue: #003A9Dff;
+    --gray-light: #959FA8ff;
+    --yellow: #FCE200ff;
+    --gray: #636E73ff;
+    --gray-lighter: #DCDFE1ff;
+    }
+    
+
+/*=====================
+LAYOUT
+===================== */ 
+    .page-wrapper  {
+    display:flex;
+    flex-direction:column;
+    }
+
+    section {
+        padding:4em 2em 0 2em;
+    }
+
+
+
+/*=====================
+BUTTONS
+===================== */ 
+.btn.btn-primary {
+    background-color:var(--blue);
+}
+
+
+.site-logo {
+    height:60px;
+}
+/*=====================
+HERO
+===================== */ 
+#hero {
+    background-image: url("http://127.0.0.1:5500/img/work-photo-1.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height:400px;
+    width:100%;
+}
+
+#heroContent {
+    padding:4em 0;
+}
+/*=====================
+BENEFITS
+===================== */ 
+.benefit-cards-wrapper {
+display:flex;
+flex-direction:column;
+gap:2em;
+}
+.benefit-card {
+padding:2em;
+}
+
+/*=====================
+FAQ
+===================== */
+.accordion-button {
+padding:1em 0;
+}
+.accordion-button::before {
+content:\F505;
+}
+
+/*=====================
+SERVICES
+===================== */
+.service-list-group-wrapper, .footer {
+display:flex;
+flex-direction:column;
+}
+
+.service-list-group {
+list-style-type:none;
+padding:0;
+margin:0;
+}
+.service-list-group-item {
+margin-bottom:.5em;
+}
+
+.bi-check-circle-fill {
+    color:var(--bs-success);
+}
+
+/*=====================
+ABOUT
+===================== */
+.about-wrapper {
+    display:flex;
+    flex-direction: column;
+    gap:2em;
+}
+.business-info {
+    display:flex;
+    flex-direction: column;
+    gap:2em;
+    min-width:300px;
+}
+
+/*=====================
+FOOTER
+===================== */
+.footer {
+    gap:2em;
+    padding:1em 2em;
+}
+
+
+/*  Small devices (landscape phones, 576px and up)  */
+@media (min-width: 576px) { 
+
+}
+
+/*  Medium devices (tablets, 768px and up)  */
+@media (min-width: 768px) {
+    .benefit-cards-wrapper {
+        flex-direction:row;
+        }
+                
+        .service-list-group-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        }
+        .about-wrapper {
+        flex-direction: row;
+        }
+        .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        }    
+}
