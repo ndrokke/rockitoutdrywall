@@ -7,6 +7,13 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="icon" href="img/favicons/favicon.ico">
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -48,11 +55,11 @@
                         <!-- Page Navigation after successful submit -->
                         <input type="hidden" name="_next" value="https://ndrokke.github.io/rockitoutdrywall/">
                     <div class="mb-3">
-                        <label for="contactName" class="form-label">Name</label>
+                        <label for="contactName" class="form-label required">Name</label>
                         <input type="text" class="form-control" name="Sender&nbsp;Name" id="contactName" placeholder="Your Name" required>
                       </div>
                     <div class="mb-3">
-                        <label for="contactEmail" class="form-label">Email address</label>
+                        <label for="contactEmail" class="form-label required">Email address</label>
                         <input type="email" class="form-control" name="Email" id="contactEmail" placeholder="name@example.com" required>
                       </div>
                       <div class="mb-3">
@@ -60,7 +67,7 @@
                         <input type="tel" class="form-control" name="Phone&nbsp;Number" id="contactPhone" placeholder="(999) 999-9999">
                       </div>                      
                       <div class="mb-3">
-                        <label for="contactMessage" class="form-label">Message</label>
+                        <label for="contactMessage" class="form-label required">Message</label>
                         <textarea class="form-control" name="Message" id="contactMessage" rows="3" required></textarea>
                       </div>
                         <hr class="my-4">
@@ -68,12 +75,16 @@
                       </form>                        
                       </div>
                 <div class="col-12 col-md-5">
-                    <div class="card bg-light p-3 d-flex flex-column gap-3 mt-4">
-                        <h4>Company Information</h4>
-                        <div><i class="me-1 bi bi-pin-map-fill"></i><span class="contact-text place"> City, State</span></div>
-                        <div><i class="me-1 bi bi-telephone-fill"></i><span class="contact-text phone"> <a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></div>
-                        <div><i class="me-1 bi bi-envelope-at"></i><span class="contact-text gmail"> <a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></div>
-                </div>
+                    <div class="card mt-3">
+                      <div class="card-body">
+                        <h5 class="card-title">Company Information</h5>
+                      </div>
+                        <div class="list-group list-group-flush">
+                        <div class="list-group-item"><i class="me-1 bi bi-pin-map-fill"></i><span class="contact-text place"> 6215 LaFayette Road,  Raymond, IA 50667</span></div>
+                        <div class="list-group-item"><i class="me-1 bi bi-telephone-fill"></i><span class="contact-text phone"> <a href="tel:319-610-2050" title="Give me a call">(319) 610-2050</a></span></div>
+                        <div class="list-group-item"><i class="me-1 bi bi-envelope-at"></i><span class="contact-text gmail"> <a href="mailto:#" title="Send me an email">contact@rockitoutdrywall.com</a></span></div>
+                        </div>
+                  </div>
             </div>
         </div>
       </main>
