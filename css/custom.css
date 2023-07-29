@@ -1,3 +1,6 @@
+/* ================
+LAYOUT 
+===============*/
 .navbar {
     padding-top:0;
     padding-bottom:0;
@@ -8,13 +11,13 @@ img.logo{
 }
 
 body {
-    height:calc(100vh - 100px);
+    min-height:100vh;
 }
 
 main {
     padding-top:1rem;
 /*    background-color: var(--bs-light); */
-    min-height:100%;
+    height:calc(100vh - 100px);
 }
 
 main#landing {
@@ -28,6 +31,7 @@ main#landing {
     flex-direction: column;
     align-items: center;
 }
+
 /*#hero {
     background: url("/img/flag-background.jpg");
     background-position: center;
@@ -38,13 +42,41 @@ main#landing {
 }
 */
 
+/* ================
+SERVICES 
+===============*/
+#servicesList li {
+    padding-left:0;
+    padding-right:0;
+    border:none;
+}
+
 
 .bi-check-circle-fill {
     color: var(--bs-success);
 }
 
 
+/* ================
+GALLERY 
+===============*/
+
 .gallery-grid {
     display: grid;
     gap:2rem;
+text-align: center;
+}
+
+
+/* ================
+FAQ 
+===============*/
+.accordion-button {
+    padding-left:0;
+}
+
+label.required::after {
+margin-left:4px;
+content:"*";
+color:var(--bs-danger);
 }
